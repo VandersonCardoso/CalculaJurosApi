@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CalculaJurosApi.Api</name>
+    </assembly>
+    <members>
+        <member name="M:CalculaJurosApi.Api.Controllers.CalculaController.GetCalculoJuros(System.Decimal,System.Int32)">
+            <summary alignment="right">
+            Endpoint do cálculo de juros
+            </summary>
+            <remarks>
+            Este endpoint tem como objetivo retornar o cálculo de juros.
+            </remarks>
+            <returns>Códigos de retorno para o endpoint calculaJuros</returns>
+            <response code="202">Código de retorno caso o endpoint obtenha o cálculo de juros corretamente.</response>
+            <response code="400">Código de retorno caso o conteúdo da requisição esteja divergente da especificação ou em caso de erro ao obter o cálculo de juros.</response>
+        </member>
+        <member name="M:CalculaJurosApi.Api.Controllers.CalculaController.GetUrlProjeto">
+            <summary alignment="right">
+            Endpoint da url do projeto
+            </summary>
+            <remarks>
+            Este endpoint tem como objetivo retornar url do projeto no github.
+            </remarks>
+            <returns>Códigos de retorno para o endpoint showmethecode</returns>
+            <response code="202">Código de retorno caso o endpoint obtenha a url do projeto corretamente.</response>
+            <response code="400">Código de retorno caso o conteúdo da requisição esteja divergente da especificação ou em caso de erro ao obter a url do projeto.</response>
+        </member>
+    </members>
+</doc>
