@@ -8,7 +8,14 @@ namespace CalculaJurosApi.Services
         #region ObterUrlProjeto
         public async Task<string> ObterUrlProjeto()
         {
-            return string.Empty;
+            try
+            {
+                return ThisAssembly.Git.RepositoryUrl;
+            }
+            catch
+            {
+                return string.Empty;
+            }
         }
         #endregion
     }
